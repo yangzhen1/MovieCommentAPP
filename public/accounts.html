@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>App Name</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <a href="library.html">
+      library
+      <div class="icon">
+        <img src="./assets/library_icon.png"/>
+      </div>
+    </a>
+    <a href="ranks.html">
+      Ranks
+      <div class="icon">
+        <img src="./assets/ranking_icon.png"/>
+      </div>
+    </a>
+    <a href="list.html">
+      My List
+      <div class="icon">
+        <img src="./assets/list_icon.png"/>
+      </div>
+    </a>
+    <a href="accounts.html">
+      Account
+      <div class="icon active">
+        <img src="./assets/account_icon.png"/>
+      </div>
+    </a>
+  </nav>
+  <div class="page-container">
+    <div id="tabs" class="row" style="margin-top: 10px">
+      <button id="tab-1" style="width: 45%" onclick="tab(1)">Sign Up</button>
+      <button id="tab-2" style="width: 45%" onclick="tab(2)">Login</button>
+    </div>
+    <div id="login" class="login-form">
+      <input type="text" id="login-email" name="email" placeholder="Email Address"/>
+      <input type="password" id="login-password" name="password" placeholder="Password"/>
+      <button onclick="login()">Login</button>
+    </div>
+    <div id="register" class="login-form">
+      <input type="text" id="register-email" name="email" placeholder="Email Address"/>
+      <input type="password" id="register-password" name="password" placeholder="Password"/>
+      <input type="password" id="register-cpassword" name="password" placeholder="Confirm Password"/>
+      <button onclick="register()">Register</button>
+    </div>
+    <div id="accounts" class="login-form">
+      <input type="text" id="accounts-email" name="email" placeholder="Email Address" disabled/>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+  <div id="mask" class="mask">
+    <div class="loader"></div>
+  </div>
+  <script src="scripts/accounts.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/8.9.0/firebase-app.js"></script>
+  <script src="/__/firebase/8.7.1/firebase-auth.js"></script>
+  <script src="/__/firebase/8.7.1/firebase-firestore.js"></script>
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+</body>
+
+</html>

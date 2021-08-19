@@ -1,0 +1,34 @@
+[debug] [2021-08-18T14:30:01.100Z] ----------------------------------------------------------------------
+[debug] [2021-08-18T14:30:01.102Z] Command:       /usr/local/bin/firebase /Users/zhangkaifan/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2021-08-18T14:30:01.102Z] CLI Version:   9.16.0
+[debug] [2021-08-18T14:30:01.102Z] Platform:      darwin
+[debug] [2021-08-18T14:30:01.102Z] Node Version:  v12.18.1
+[debug] [2021-08-18T14:30:01.103Z] Time:          Wed Aug 18 2021 22:30:01 GMT+0800 (GMT+08:00)
+[debug] [2021-08-18T14:30:01.103Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-18T14:30:01.179Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-18T14:30:01.179Z] > authorizing via signed-in user (zheny0815@gmail.com)
+[debug] [2021-08-18T14:30:01.180Z] [iam] checking project movie-app-a748c for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-08-18T14:30:01.182Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-18T14:30:01.182Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-18T14:30:02.139Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Wed, 18 Aug 2021 14:30:02 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-18T14:30:02.197Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/movie-app-a748c:testIamPermissions  
+ {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-08-18T14:30:03.238Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 18 Aug 2021 14:30:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=186","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-18T14:30:03.241Z] > refreshing access token with scopes: []
+[debug] [2021-08-18T14:30:03.242Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-18T14:30:03.965Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 18 Aug 2021 14:30:03 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-18T14:30:04.020Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/movie-app-a748c [none]
+[debug] [2021-08-18T14:30:05.024Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/movie-app-a748c 200
+[debug] [2021-08-18T14:30:05.024Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/movie-app-a748c {"projectId":"movie-app-a748c","projectNumber":"976004364491","displayName":"movie-app","name":"projects/movie-app-a748c","resources":{"hostingSite":"movie-app-a748c","storageBucket":"movie-app-a748c.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'movie-app-a748c'...
+[info] 
+[info] i  deploying firestore, hosting 
+[info] i  firestore: reading indexes from firestore.indexes.json... 
+[info] i  cloud.firestore: checking firestore.rules for compilation errors... 
+[debug] [2021-08-18T14:30:05.029Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-18T14:30:05.029Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
